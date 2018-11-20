@@ -29,7 +29,15 @@
       $(function(){
           $('.button').click(function(){
             $('.button').removeClass('active');
+            $('.button').css('top', '0px');
             $(this).addClass('active');
+            $('.active').animate({
+                top: '-4px'
+            },
+            500,
+            'linear'
+            );
+            
         });
 　    });
   </script>
